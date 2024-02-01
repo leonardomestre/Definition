@@ -1,0 +1,38 @@
+<div class="game-container">
+    <button class="tutorialButton" (click)="rulesVisibleChange()"></button>
+    <div class="card">
+        <app-rules class="card" [style.display]=" rulesVisible ? 'block' : 'none'"></app-rules>
+        <div class="stopwatch" [style.display]="stopwatchVisible ? 'flex' : 'none'" >
+            <span [style.color]=" stopwatchColor ? 'red' : 'black'" >{{ stopwatchNumber }}</span>
+        </div>
+        <table>
+            <caption>Jogadores</caption>
+            <tr  *ngFor="let user of users">
+                <td class="tdName">
+                    <span>{{user.name}}</span>
+                </td>
+                <td class="tdPoints">
+                    <span>{{user.points}}</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="card">
+        <app-word-options
+        [words]="words"
+        (selectedWordEvent)="selectWord($event)" 
+        [style.display]="wordOptionsView ? 'block' : 'none'"></app-word-options>
+    
+        <app-word-definition
+        [word]="selectedWord"
+        [style.display]="wordDefinitionView ? 'flex' : 'none'"
+        (definitionEvent)="selectPlayerDefinition($event)"></app-word-definition>
+    
+        <app-definitions-options [style.display]="definitionOptionsView ? 'block' : 'none'"
+        [definitions]="playersDefinitions"
+        [type]="wordDefinitionType"
+        [message]="messageDefinitionOpitions"
+        (definitionEventEmit)="selectDefinition($event)"></app-definitions-options>
+    </div>
+
+</div>

@@ -1,0 +1,222 @@
+.room-container{
+    display: flex;
+    font-size: 1.3em;
+    box-sizing: border-box;
+    width: 95vw;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    app-rules{
+        margin-bottom: 30px;
+        font-size: 1em;
+    }
+
+    .tutorialButton{
+        display: none;
+        background-image: url("../../../assets/book.png");
+        width: 64px;
+        height: 64px;
+        border: none;
+        align-self: flex-end;
+    }
+
+    .form-container{
+        display:flex;
+        
+    }
+    .form-rules-container{
+        display: flex;
+        box-sizing: border-box;
+        padding: 20px;
+        flex-direction: column;
+        height: 100%;
+        border: 1px solid black;
+        justify-content: space-between;
+
+        span{
+            font-size: 1.5em;
+        }
+    }
+    form{
+        font-size: 1.3em;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        align-items: center;
+        div{
+            padding:5px;
+
+            input, select{
+                font-size: 1em;
+            }
+            input{
+                width: 3ch;
+            }
+            select{
+                width: 7ch;
+            }
+        }
+        
+    }
+    .table-container{
+        padding: 0px;
+        margin-right: 20px;
+        height: 100%;
+        width:30%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        
+    }
+    table{
+        font-size:2em;
+        background-color: #3A0CA3;
+        width:100%;  
+        height: calc(100% - 2.1ch);
+        box-sizing: border-box;
+        padding: 0px;
+        border-radius: 15px;
+        border-collapse: collapse;
+        overflow-y:scroll;
+        td{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 2px #480CA8 solid;
+            padding: 15px;
+            border-radius: 10px;
+            width: 100%;
+            background-color: #3F37C9;  
+        }
+        tr{
+            padding: 10px 10px 0px 10px;
+            height: auto;
+            display: flex;
+            
+        }
+        
+           
+    }
+}
+
+@media screen and (max-width: 920px), (max-height:920px) {
+
+    .room-container{
+        width: 95vw;
+        flex-direction: column;
+    }
+    
+    .table-container{
+        max-width: 100% !important;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        border-collapse: collapse !important;
+        overflow-y: hidden !important;
+        overflow-x: scroll !important;
+        
+        
+        table{
+            font-size: 1em;
+            width: 100%;
+            height: auto;
+            border-radius: 0px;
+            
+            tr{
+                height: 100% !important;
+                width: 14ch;
+                padding: 10px;
+                
+            }
+            td{
+                box-sizing: border-box;
+                margin: 10px;
+                height: 100% !important;
+            }
+            .tr-container{
+                display:flex;
+                max-width: 100%;
+            }
+        }
+
+    }
+    app-rules{
+        font-size: 0.94em !important;
+        display: block;
+    }
+
+    .button-container{
+        display:flex;
+        flex-direction: column;  
+    }
+    .tutorialButton{
+        display:block;
+        position: inherit;
+    }
+    
+}
+
+@media screen and (max-width: 800px), (max-height:800px){
+    form{
+        font-size: 0.8em !important;
+    }
+    app-rules{
+        font-size: 0.8em !important;
+    }
+}
+
+@media screen and (max-width: 700px), (max-height:700px){
+    .tutorialButton{
+        display: block !important;
+        position: fixed;
+        top:10px;
+        right:10px;
+        max-width: 40px !important;
+        max-height: 40px !important;
+        background-size: 40px 40px;
+    }
+
+    .table-container{
+        width: 100% !important;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        
+        
+        table{
+            font-size: 0.7em;
+            width: 100%;
+            height: auto;
+
+            tr{
+                height: 100% !important;
+                width: 14ch;
+                padding: 5px;
+            }
+            td{
+                box-sizing: border-box;
+                margin: 5px;
+                height: 100% !important;
+            }
+        }
+        
+    }
+    form{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .form-container{
+        flex-direction: column;
+    }
+    
+    app-rules{
+        display: none;
+        position: fixed;
+        left: calc(50% - 45vw);
+        top: calc(50% - 35vh + 32px);
+        right: 0px;
+        max-width: 90vw;
+        max-height: 70vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        background-color: rgb(72,149,239);
+        border: 1px solid black;
+    }
+}

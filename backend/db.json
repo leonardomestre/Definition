@@ -1,0 +1,186 @@
+{
+  "Users": [
+    {
+      "id": 1,
+      "login": "abc",
+      "password": 123
+    }
+  ],
+  "words": [
+    {
+      "name": "Alvíssaras",
+      "definition": "Expressão de alegria por notícia recebida",
+      "id": 1
+    },
+    {
+      "name": "Balaústre",
+      "definition": "Pequena coluna ornamentada utilizada em cercas",
+      "id": 2
+    },
+    {
+      "name": "Beneplácito",
+      "definition": "Consentimento ou aprovação",
+      "id": 3
+    },
+    {
+      "name": "Cornucópia",
+      "definition": "Abundância, vaso em forma de chifre cheio de flores e frutos que representa a fartura",
+      "id": 4
+    },
+    {
+      "name": "Cuntatório",
+      "definition": "Em que há demora",
+      "id": 5
+    },
+    {
+      "name": "Deletério",
+      "definition": "Degradante, insalubre, prejudicial",
+      "id": 6
+    },
+    {
+      "name": "Desasnado",
+      "definition": "Que recebeu instrução, que desasnou",
+      "id": 7
+    },
+    {
+      "name": "Empedernido",
+      "definition": "Aquele que não se deixa persuadir ou não se comove",
+      "id": 8
+    },
+    {
+      "name": "Filantropo",
+      "definition": "Altruísta",
+      "id": 9
+    },
+    {
+      "name": "Filaucioso",
+      "definition": "Presunçoso",
+      "id": 10
+    },
+    {
+      "name": "Graçolar",
+      "definition": "Dizer brincadeiras",
+      "id": 11
+    },
+    {
+      "name": "Hebdomadário",
+      "definition": "Semanal",
+      "id": 12
+    },
+    {
+      "name": "Iconoclasta",
+      "definition": "Aquele que contesta a veneração de símbolos religiosos",
+      "id": 13
+    },
+    {
+      "name": "Inócuo",
+      "definition": "Inofensivo",
+      "id": 14
+    },
+    {
+      "name": "Jocoso",
+      "definition": "Alegre, cômico",
+      "id": 15
+    },
+    {
+      "name": "Lancinante",
+      "definition": "Pungente",
+      "id": 16
+    },
+    {
+      "name": "Loquaz",
+      "definition": "Eloquente",
+      "id": 17
+    },
+    {
+      "name": "Mendacioso",
+      "definition": "Aquele que mente",
+      "id": 18
+    },
+    {
+      "name": "Modorrento",
+      "definition": "Lento",
+      "id": 19
+    },
+    {
+      "name": "Numismática",
+      "definition": "coleção de moedas antigas",
+      "id": 20
+    },
+    {
+      "name": "Ósculo",
+      "definition": "Beijo, com o sentido de cumprimento ou conciliação",
+      "id": 21
+    },
+    {
+      "name": "Quintessência",
+      "definition": "Auge",
+      "id": 22
+    },
+    {
+      "name": "Recôndito",
+      "definition": "Oculto",
+      "id": 23
+    },
+    {
+      "name": "Rufião",
+      "definition": "encrenqueiro",
+      "id": 24
+    },
+    {
+      "name": "Sectário",
+      "definition": "Intolerante",
+      "id": 25
+    },
+    {
+      "name": "Taciturno",
+      "definition": "Sombrio",
+      "id": 26
+    },
+    {
+      "name": "Tergiversar",
+      "definition": "Fazer rodeios, enrolar",
+      "id": 27
+    },
+    {
+      "name": "Ufanismo",
+      "definition": "Aquele que se orgulha de algo de forma exagerada",
+      "id": 28
+    },
+    {
+      "name": "Urdidura",
+      "definition": "Trama, enredo, intriga",
+      "id": 29
+    },
+    {
+      "name": "Vicissitude",
+      "definition": "Sucessão de mudanças",
+      "id": 30
+    },
+    {
+      "name": "Vitupério",
+      "definition": "Comportamento ofensivo",
+      "id": 31
+    },
+    {
+      "name": "Xifópago",
+      "definition": "Gêmeo unido ao irmão por alguma parte do corpo, gêmeo siamês",
+      "id": 32
+    },
+    {
+      "name": "Yanomami",
+      "definition": "Denominação de povo indígena que habita o Brasil e a Venezuela",
+      "id": 33
+    },
+    {
+      "name": "Zaragatoa",
+      "definition": "Pequena haste com uma ponta absorvente utilizada para aplicação de medicamento ou coleta de material orgânico",
+      "id": 34
+    },
+    {
+      "name": "Zeugma",
+      "definition": "Figura de linguagem que consiste na omissão de um termo dito anteriormente",
+      "id": 35
+    }
+  ]
+}

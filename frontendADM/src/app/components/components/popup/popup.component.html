@@ -1,0 +1,7 @@
+<div class="popup-container card" [style.display]="visible ? 'block' : 'none'">
+    <span>{{ messager }}</span>
+    <div class="button-container">
+        <button *ngIf="continueButton" class="continue" (click)="continue()">{{ continueButton }}</button>
+        <button class="cancel" (click)="cancel()">{{ cancelButton }}</button>
+    </div>
+</div>

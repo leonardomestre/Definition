@@ -1,0 +1,23 @@
+<app-menu
+    [wordIds]="selectedIds"
+></app-menu>
+
+<div class="read-container">
+    <button routerLink="form/create"> Nova Palavra</button>
+    <div class="card">
+        <table>
+            <tr>
+                <th><input type="checkbox" #checkAll (click)="activeAllCheckBox()"></th>
+                <th>Id</th>
+                <th>Palavra</th>
+                <th>Definição</th>
+            </tr>
+            <tr *ngFor="let word of wordRead">
+                <th><input type="checkbox" #checkAll id="{{word.id}}" (click)="addId(word.id || '')" ></th>
+                <th routerLink="form/update/{{word.id}}">{{ word.id }}</th>
+                <th routerLink="form/update/{{word.id}}">{{ word.name }}</th>
+                <th routerLink="form/update/{{word.id}}">{{ word.definition }}</th>
+            </tr>
+        </table>
+    </div>
+</div>

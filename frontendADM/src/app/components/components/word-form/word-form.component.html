@@ -1,0 +1,12 @@
+<div class="form-container">
+    <form class="card">
+        <label>Palavra</label>
+        <input type="text"  name="name" [(ngModel)]="wordForm.name">
+        <label>Definição</label>
+        <input type="text"  name="definition" [(ngModel)]="wordForm.definition" >
+        <div class="buttons">
+            <button (click)="save()">Salvar</button>
+            <button class="cancelButton" routerLink="">Cancelar</button>
+        </div>
+    </form>
+</div>

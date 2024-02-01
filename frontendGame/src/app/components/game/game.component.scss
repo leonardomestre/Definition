@@ -1,0 +1,78 @@
+.game-container{
+    height: 95%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    app-rules{
+        position: fixed;
+        left: 10px;
+        background-color: lightblue;
+        border-color:black;
+        color: black;
+    }
+
+    app-word-options{
+        box-sizing: border-box;
+        width: 80%;
+    }
+    .stopwatch{
+        display: flex;
+        background-color: lightblue;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        padding: 0%;
+        left: 15%;
+        box-sizing: border-box;
+        font-size: 60px;
+        width:3ch;
+        height: 3ch;
+        text-align: center;
+        text-justify: center;
+        border: solid 3px black;
+        border-radius: 100%;
+        
+    }
+
+    .tutorialButton{
+        position: fixed;
+        top:10px;
+        right: 10px;
+        background-image: url("../../../assets/book.png");
+        width: 64px;
+        height: 64px;
+        border: none;
+        align-self: flex-end; 
+    }
+    table{
+        width: 30%;  
+        height: 200px;     
+        box-sizing: border-box;
+        margin:10px;
+        padding: 0px;
+        border: 1px #000 solid;
+        border-collapse: collapse;
+
+        .tdPoints{
+            border-left: 1px #000 solid;
+          width: 10%;
+        }
+        .tdName{
+            width:90%;
+        }
+        
+        tr{
+            height: 20px;
+            box-sizing: border-box;
+            border-bottom:1px #000 solid; 
+            display: flex; 
+        }
+        
+           
+    }
+    .card{
+        min-height: 49%;
+    }
+}

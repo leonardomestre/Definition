@@ -1,0 +1,8 @@
+<div class="word-options-container">
+    <h1>Escolha uma palavra!</h1>
+    <form>
+        <div *ngFor="let word of words" class="inputDiv">
+            <input type="radio" id="{{ word.name }}" name="word" (click)="selectword(word.name, word.definition)"><span>{{ word.name }}: {{ word.definition }}</span>
+        </div>
+    </form>
+</div>

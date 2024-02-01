@@ -1,0 +1,11 @@
+<div class="menu-container">
+    <span (click)="openDeletePopup()"> Deletar itens selecionados</span>
+</div>
+<app-popup
+    [messager]="'Desejá realmente excluir os itens selecionados'"
+    [cancelButton]="'Não'"
+    [continueButton]="'Sim'"
+    [visible]="popupDelete"
+    (onCancel)="popupDelete=false"
+    (onContinue)="deleteAll()"
+></app-popup>

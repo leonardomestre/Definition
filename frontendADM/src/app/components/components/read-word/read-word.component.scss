@@ -1,0 +1,19 @@
+.read-container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 50px;
+    align-items: flex-end;
+
+}
+table{
+    width: calc(90vw - 250px);
+    border-collapse: collapse;
+}
+tr{
+    border-bottom: 1px solid #DDD;
+}
+tr:hover:nth-child(1n+2){
+    background-color: #EDEDE9;
+}

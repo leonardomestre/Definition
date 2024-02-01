@@ -1,0 +1,46 @@
+{
+  "Users": [
+    {
+      "id": 1,
+      "login": "abc",
+      "password": 123
+    }
+  ],
+  "words": [
+    {
+      "name": "Alvíssaras",
+      "definition": "Expressão de alegria por notícia recebida",
+      "id": 1
+    },
+    {
+      "name": "Balaústre",
+      "definition": "Pequena coluna ornamentada utilizada em cercas",
+      "id": 2
+    },
+    {
+      "name": "Beneplácito",
+      "definition": "Consentimento ou aprovação",
+      "id": 3
+    },
+    {
+      "name": "Cornucópia",
+      "definition": "Abundância, vaso em forma de chifre cheio de flores e frutos que representa a fartura",
+      "id": 4
+    },
+    {
+      "name": "Cuntatório",
+      "definition": "Em que há demora",
+      "id": 5
+    },
+    {
+      "name": "Deletério",
+      "definition": "Degradante, insalubre, prejudicial",
+      "id": 6
+    },
+    {
+      "name": "Desasnado",
+      "definition": "Que recebeu instrução, que desasnou",
+      "id": 7
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<div class="home-container">
+    <div class="rules-container">
+        <app-rules></app-rules>
+        <app-rules [style.display]="rulesView ? 'block' : 'none'"></app-rules><button class="tutorialButton" (click)="rulesVisibleChange()"></button>
+    </div>
+    <div class="form-container">
+        <form>
+            <span>Nome de usuário</span>
+            <input #user class="name" type="text" maxlength="15">
+            <span>Numero da Sala</span>
+            <input #room class="room" type="text" maxlength="6">
+        </form>
+            <div class="button-container">
+                <button (click)="join()">Entrar</button>
+                <button (click)="createRoom()">Criar Sala</button>
+            </div>
+    </div>
+</div>
+<app-alert class="alert" 
+    [style.display]="alertVisible ? 'flex' : 'none'"
+    [message]="message"></app-alert>

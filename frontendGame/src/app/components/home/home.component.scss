@@ -1,0 +1,90 @@
+.home-container{
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    box-sizing: border-box;
+    width: 80vw;
+    min-height: 100%;
+    padding: 20px;
+    border: 2px solid rgba(72, 12, 168, 0.3);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .3); 
+    border-radius: 5px;
+
+    
+    
+    rules-container{
+        width:100%; 
+    }
+
+    .tutorialButton{
+        display: none;
+        background-image: url("../../../assets/book.png");
+        width: 64px;
+        height: 64px;
+        border: none;
+        align-self: flex-end;
+    }
+
+    .form-container{
+        display: flex;
+        flex-direction: column; 
+        align-self: center;
+        width: 100%;
+        align-items: center;
+        
+    }
+    form{
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+    input{
+        font-size: 1.5em;
+        height: auto;
+        width:10ch;
+        margin:10px
+    }
+
+    .name{
+        width:15ch;
+    }
+
+    .room{
+        width:6ch;
+    }
+
+    button{
+        margin:5px
+    }
+
+    @media screen and (max-width: 700px), (max-height:700px) {
+        app-rules{
+            display: none;
+            position: fixed;
+            left: calc(50% - 45vw);
+            top: calc(50% - 35vh + 32px);
+            right: 0px;
+            max-width: 90vw;
+            max-height: 70vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            background-color: rgb(72,149,239);
+            border: 1px solid black;
+        }
+
+        .button-container{
+            display:flex;
+            flex-direction: column;  
+        }
+        .tutorialButton{
+            display:block;
+            position: inherit;
+        }
+        
+    }
+}

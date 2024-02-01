@@ -1,0 +1,9 @@
+<div class="definition-options-container">
+    <form>
+        <h1>{{ message }}</h1>
+        <div *ngFor="let definition of definitions">
+            <input name="options"[type]="type" (click)="selectedDefinition(definition)"> <span>{{ definition }}</span>
+        </div>
+    </form>
+</div>
+

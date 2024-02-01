@@ -1,0 +1,19 @@
+.popup-container{
+    position:fixed;
+    top:0px;
+    bottom: 0px;
+    left:0px;
+    right: 0px;
+    margin: auto;
+    width: 25vw;
+    height: 10vh;
+    text-align: center;
+    padding: 30px;
+    background-color: #EEE;
+}
+button{
+    margin-top: 10px;
+}
+.cancel{
+    margin-left:10px
+}

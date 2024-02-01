@@ -1,0 +1,46 @@
+<div class="room-container card">
+    <div class="table-container">
+        <table>
+            <caption>Jogadores</caption>
+            <div class="tr-container">
+                <tr  *ngFor="let user of users; let i=index">
+                    <td>
+                        <span>{{user}}</span><img *ngIf="i == 0" class="master" src="/assets/coroa.png">
+                    </td>
+                </tr>
+            </div>
+        </table>   
+    </div>
+
+    <div class="form-rules-container">
+        <span> Sala: {{ roomName }}</span>
+        <app-rules></app-rules>
+        <app-rules [style.display]="rulesView ? 'block' : 'none'"></app-rules><button class="tutorialButton" (click)="rulesVisibleChange()"></button>
+        <div class="form-container">
+            <form>
+                <div class="time-container">
+                    <label>Tempo de escolha: </label> 
+                    <select #time>
+                        <option value="5">5s</option>
+                        <option value="10">10s</option>
+                        <option value="15">15s</option>
+                        <option value="20">20s</option>
+                        <option value="30">30s</option>
+                    </select>
+                </div>
+                <div class="turn-container">
+                    <label>Numero de rodadas: </label>
+                    <input #turn type="text"  value="3" maxlength="2">   
+                </div>
+            </form>
+            <button (click)="start()" [disabled]="!userMaster">Iniciar</button>
+        </div>
+    </div>
+    
+</div>
+<app-alert class="alert" 
+    [style.display]="alertVisible ? 'flex' : 'none'"
+    [style.color]="ifMessageGood ? '#155724' : '#721c24'"
+    [style.background-color]="ifMessageGood ? '#d4edda' : '#f9d8db'"
+    [style.border-color]="ifMessageGood ? '#c3e6cb' : '#f5c6cb'"
+    [message]="message"></app-alert>
